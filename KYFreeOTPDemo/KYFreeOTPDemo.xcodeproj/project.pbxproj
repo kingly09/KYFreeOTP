@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCCD66431FC8175000261B28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD66421FC8175000261B28 /* AppDelegate.m */; };
+		BCCD66461FC8175000261B28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD66451FC8175000261B28 /* ViewController.m */; };
+		BCCD66491FC8175000261B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCD66471FC8175000261B28 /* Main.storyboard */; };
+		BCCD664B1FC8175000261B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCD664A1FC8175000261B28 /* Assets.xcassets */; };
+		BCCD664E1FC8175000261B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCD664C1FC8175000261B28 /* LaunchScreen.storyboard */; };
+		BCCD66511FC8175000261B28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD66501FC8175000261B28 /* main.m */; };
+		BCCD665B1FC8175000261B28 /* KYFreeOTPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD665A1FC8175000261B28 /* KYFreeOTPDemoTests.m */; };
+		BCCD66661FC8175000261B28 /* KYFreeOTPDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD66651FC8175000261B28 /* KYFreeOTPDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCCD66571FC8175000261B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCCD66361FC8175000261B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCCD663D1FC8175000261B28;
+			remoteInfo = KYFreeOTPDemo;
+		};
+		BCCD66621FC8175000261B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCCD66361FC8175000261B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCCD663D1FC8175000261B28;
+			remoteInfo = KYFreeOTPDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCCD663E1FC8175000261B28 /* KYFreeOTPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYFreeOTPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCD66411FC8175000261B28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCCD66421FC8175000261B28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCCD66441FC8175000261B28 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCCD66451FC8175000261B28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCCD66481FC8175000261B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCCD664A1FC8175000261B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCCD664D1FC8175000261B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCCD664F1FC8175000261B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCD66501FC8175000261B28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCCD66561FC8175000261B28 /* KYFreeOTPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYFreeOTPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCD665A1FC8175000261B28 /* KYFreeOTPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYFreeOTPDemoTests.m; sourceTree = "<group>"; };
+		BCCD665C1FC8175000261B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCD66611FC8175000261B28 /* KYFreeOTPDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYFreeOTPDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCD66651FC8175000261B28 /* KYFreeOTPDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYFreeOTPDemoUITests.m; sourceTree = "<group>"; };
+		BCCD66671FC8175000261B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCCD663B1FC8175000261B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCD66531FC8175000261B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCD665E1FC8175000261B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCCD66351FC8175000261B28 = {
+			isa = PBXGroup;
+			children = (
+				BCCD66401FC8175000261B28 /* KYFreeOTPDemo */,
+				BCCD66591FC8175000261B28 /* KYFreeOTPDemoTests */,
+				BCCD66641FC8175000261B28 /* KYFreeOTPDemoUITests */,
+				BCCD663F1FC8175000261B28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCCD663F1FC8175000261B28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCCD663E1FC8175000261B28 /* KYFreeOTPDemo.app */,
+				BCCD66561FC8175000261B28 /* KYFreeOTPDemoTests.xctest */,
+				BCCD66611FC8175000261B28 /* KYFreeOTPDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCCD66401FC8175000261B28 /* KYFreeOTPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BCCD66411FC8175000261B28 /* AppDelegate.h */,
+				BCCD66421FC8175000261B28 /* AppDelegate.m */,
+				BCCD66441FC8175000261B28 /* ViewController.h */,
+				BCCD66451FC8175000261B28 /* ViewController.m */,
+				BCCD66471FC8175000261B28 /* Main.storyboard */,
+				BCCD664A1FC8175000261B28 /* Assets.xcassets */,
+				BCCD664C1FC8175000261B28 /* LaunchScreen.storyboard */,
+				BCCD664F1FC8175000261B28 /* Info.plist */,
+				BCCD66501FC8175000261B28 /* main.m */,
+			);
+			path = KYFreeOTPDemo;
+			sourceTree = "<group>";
+		};
+		BCCD66591FC8175000261B28 /* KYFreeOTPDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCCD665A1FC8175000261B28 /* KYFreeOTPDemoTests.m */,
+				BCCD665C1FC8175000261B28 /* Info.plist */,
+			);
+			path = KYFreeOTPDemoTests;
+			sourceTree = "<group>";
+		};
+		BCCD66641FC8175000261B28 /* KYFreeOTPDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCCD66651FC8175000261B28 /* KYFreeOTPDemoUITests.m */,
+				BCCD66671FC8175000261B28 /* Info.plist */,
+			);
+			path = KYFreeOTPDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCCD663D1FC8175000261B28 /* KYFreeOTPDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCD666A1FC8175000261B28 /* Build configuration list for PBXNativeTarget "KYFreeOTPDemo" */;
+			buildPhases = (
+				BCCD663A1FC8175000261B28 /* Sources */,
+				BCCD663B1FC8175000261B28 /* Frameworks */,
+				BCCD663C1FC8175000261B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYFreeOTPDemo;
+			productName = KYFreeOTPDemo;
+			productReference = BCCD663E1FC8175000261B28 /* KYFreeOTPDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCCD66551FC8175000261B28 /* KYFreeOTPDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCD666D1FC8175000261B28 /* Build configuration list for PBXNativeTarget "KYFreeOTPDemoTests" */;
+			buildPhases = (
+				BCCD66521FC8175000261B28 /* Sources */,
+				BCCD66531FC8175000261B28 /* Frameworks */,
+				BCCD66541FC8175000261B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCCD66581FC8175000261B28 /* PBXTargetDependency */,
+			);
+			name = KYFreeOTPDemoTests;
+			productName = KYFreeOTPDemoTests;
+			productReference = BCCD66561FC8175000261B28 /* KYFreeOTPDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCCD66601FC8175000261B28 /* KYFreeOTPDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCD66701FC8175000261B28 /* Build configuration list for PBXNativeTarget "KYFreeOTPDemoUITests" */;
+			buildPhases = (
+				BCCD665D1FC8175000261B28 /* Sources */,
+				BCCD665E1FC8175000261B28 /* Frameworks */,
+				BCCD665F1FC8175000261B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCCD66631FC8175000261B28 /* PBXTargetDependency */,
+			);
+			name = KYFreeOTPDemoUITests;
+			productName = KYFreeOTPDemoUITests;
+			productReference = BCCD66611FC8175000261B28 /* KYFreeOTPDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCCD66361FC8175000261B28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = kingly;
+				TargetAttributes = {
+					BCCD663D1FC8175000261B28 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					BCCD66551FC8175000261B28 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCCD663D1FC8175000261B28;
+					};
+					BCCD66601FC8175000261B28 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCCD663D1FC8175000261B28;
+					};
+				};
+			};
+			buildConfigurationList = BCCD66391FC8175000261B28 /* Build configuration list for PBXProject "KYFreeOTPDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCCD66351FC8175000261B28;
+			productRefGroup = BCCD663F1FC8175000261B28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCCD663D1FC8175000261B28 /* KYFreeOTPDemo */,
+				BCCD66551FC8175000261B28 /* KYFreeOTPDemoTests */,
+				BCCD66601FC8175000261B28 /* KYFreeOTPDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCCD663C1FC8175000261B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCD664E1FC8175000261B28 /* LaunchScreen.storyboard in Resources */,
+				BCCD664B1FC8175000261B28 /* Assets.xcassets in Resources */,
+				BCCD66491FC8175000261B28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCD66541FC8175000261B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCD665F1FC8175000261B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCCD663A1FC8175000261B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCD66461FC8175000261B28 /* ViewController.m in Sources */,
+				BCCD66511FC8175000261B28 /* main.m in Sources */,
+				BCCD66431FC8175000261B28 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCD66521FC8175000261B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCD665B1FC8175000261B28 /* KYFreeOTPDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCD665D1FC8175000261B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCD66661FC8175000261B28 /* KYFreeOTPDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCCD66581FC8175000261B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCCD663D1FC8175000261B28 /* KYFreeOTPDemo */;
+			targetProxy = BCCD66571FC8175000261B28 /* PBXContainerItemProxy */;
+		};
+		BCCD66631FC8175000261B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCCD663D1FC8175000261B28 /* KYFreeOTPDemo */;
+			targetProxy = BCCD66621FC8175000261B28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCCD66471FC8175000261B28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCCD66481FC8175000261B28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCCD664C1FC8175000261B28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCCD664D1FC8175000261B28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCCD66681FC8175000261B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCCD66691FC8175000261B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCCD666B1FC8175000261B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = KYFreeOTPDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTPDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCCD666C1FC8175000261B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = KYFreeOTPDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTPDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCCD666E1FC8175000261B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = KYFreeOTPDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYFreeOTPDemo.app/KYFreeOTPDemo";
+			};
+			name = Debug;
+		};
+		BCCD666F1FC8175000261B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = KYFreeOTPDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYFreeOTPDemo.app/KYFreeOTPDemo";
+			};
+			name = Release;
+		};
+		BCCD66711FC8175000261B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = KYFreeOTPDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTPDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KYFreeOTPDemo;
+			};
+			name = Debug;
+		};
+		BCCD66721FC8175000261B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = KYFreeOTPDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTPDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KYFreeOTPDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCCD66391FC8175000261B28 /* Build configuration list for PBXProject "KYFreeOTPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCD66681FC8175000261B28 /* Debug */,
+				BCCD66691FC8175000261B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCD666A1FC8175000261B28 /* Build configuration list for PBXNativeTarget "KYFreeOTPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCD666B1FC8175000261B28 /* Debug */,
+				BCCD666C1FC8175000261B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCD666D1FC8175000261B28 /* Build configuration list for PBXNativeTarget "KYFreeOTPDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCD666E1FC8175000261B28 /* Debug */,
+				BCCD666F1FC8175000261B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCD66701FC8175000261B28 /* Build configuration list for PBXNativeTarget "KYFreeOTPDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCD66711FC8175000261B28 /* Debug */,
+				BCCD66721FC8175000261B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCCD66361FC8175000261B28 /* Project object */;
+}
