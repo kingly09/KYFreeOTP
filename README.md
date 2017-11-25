@@ -1,6 +1,14 @@
 # KYFreeOTP
 OTP全称叫One-time Password,也称动态口令，是根据专门的算法每隔60秒生成一个与时间相关的、不可预测的随机数字组合，每个口令只能使用一次，每天可以产生43200个密码。
 
+# 名词解释
+
+OTP 是 One-Time Password的简写，表示一次性密码。
+
+HOTP 是HMAC-based One-Time Password的简写，表示基于HMAC算法加密的一次性密码。
+
+TOTP 是Time-based One-Time Password的简写，表示基于时间戳算法的一次性密码。
+
 # 简介
 
 动态口令是一种安全便捷的帐号防盗技术，可以有效保护交易和登录的认证安全，采用动态口令就无需定期更换密码，安全省心，这是这项技术的一个额外价值，对企事业内部应用尤其有用。
@@ -8,13 +16,13 @@ OTP全称叫One-time Password,也称动态口令，是根据专门的算法每�
 
 # 类型
 
-OTP从技术来分有三种形式，时间同步、事件同步、挑战/应答。
+OTP从技术来分有三种形式，（TOTP）时间同步、（HOTP）事件同步、挑战/应答。
 
-（1）时间同步
+（1）TOTP 时间同步
 
 原理是基于动态令牌和动态口令验证服务器的时间比对，基于时间同步的令牌，一般每60秒产生一个新口令，要求服务器能够十分精确的保持正确的时钟，同时对其令牌的晶振频率有严格的要求，这种技术对应的终端是硬件令牌。
 
-（2）事件同步
+（2）HOTP 事件同步
 
 基于事件同步的令牌，其原理是通过某一特定的事件次序及相同的种子值作为输入，通过HASH算法中运算出一致的密码。
 
@@ -26,6 +34,75 @@ OTP从技术来分有三种形式，时间同步、事件同步、挑战/应答�
 
 OTP生成终端主流的有短信密码、动态令牌从终端来分类包含硬件令牌和手机令牌两种，手机令牌是安装在手机上的客户端软件。
 
+
+# 原理介绍
+
+### OTP基本原理
+
+计算OTP串的公式
+
+```
+OTP(K,C) = Truncate(HMAC-SHA-1(K,C))
+```
+
+
+其中，
+
+K表示秘钥串；
+
+C是一个数字，表示随机数；
+
+HMAC-SHA-1表示使用SHA-1做HMAC；
+
+Truncate是一个函数，就是怎么截取加密后的串，并取加密后串的哪些字段组成一个数字。
+
+对HMAC-SHA-1方式加密来说，Truncate实现如下。
+
+* HMAC-SHA-1加密后的长度得到一个20字节的密串；
+* 取这个20字节的密串的最后一个字节，取这字节的低4位，作为截取加密串的下标偏移量；
+* 按照下标偏移量开始，获取4个字节，按照大端方式组成一个整数；
+* 截取这个整数的后6位或者8位转成字符串返回。
+
+Java代码实现，如下：
+
+
+```
+public static String generateOTP(String K,
+                                      String C,
+                                      String returnDigits,
+                                      String crypto){
+        int codeDigits = Integer.decode(returnDigits).intValue();
+        String result = null;
+
+        // K是密码
+        // C是产生的随机数
+        // crypto是加密算法 HMAC-SHA-1
+        byte[] hash = hmac_sha(crypto, K, C);
+        // hash为20字节的字符串
+
+        // put selected bytes into result int
+        // 获取hash最后一个字节的低4位，作为选择结果的开始下标偏移
+        int offset = hash[hash.length - 1] & 0xf;
+
+        // 获取4个字节组成一个整数，其中第一个字节最高位为符号位，不获取，使用0x7f
+        int binary =
+                ((hash[offset] & 0x7f) << 24) |
+                ((hash[offset + 1] & 0xff) << 16) |
+                ((hash[offset + 2] & 0xff) << 8) |
+                (hash[offset + 3] & 0xff);
+        // 获取这个整数的后6位（可以根据需要取后8位）
+        int otp = binary % 1000000;
+        // 将数字转成字符串，不够6位前面补0
+        result = Integer.toString(otp);
+        while (result.length() < codeDigits) {
+            result = "0" + result;
+        }
+        return result;
+    }
+
+```
+
+返回的结果就是看到一个数字的动态密码。
 
 # 系统
 
@@ -84,3 +161,5 @@ IC卡认证、CA认证、指纹认证都需要专用终端认证设备的配合�
  (7) 无缝兼容
 
 该系统相对独立，接口简单，易与现有的电子商务站点认证系统对接，采用专用动态口令认证服务器进行认证，保障现有应用系统的完整性，保护系统资源。
+
+
