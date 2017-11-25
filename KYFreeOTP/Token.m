@@ -314,7 +314,8 @@ static NSString* getHOTP(CCHmacAlgorithm algo, uint8_t digits, NSData* key, uint
 - (id)initWithString:(NSString*)string internal:(BOOL)internal {
     return [self initWithURL:[[NSURL alloc] initWithString:string] internal:internal];
 }
-
+//覆盖description方法的默认实现,description的默认实现是返回的格式是 <类名: 对象的内存地址>
+//现在覆盖description为自定义字符串
 - (NSString*)description {
     NSString *tmp = [NSString
             stringWithFormat:@"otpauth://%@/%@:%@?algorithm=%s&digits=%lu&secret=%@&issuer=%@&period=%u&issuerorig=%@&nameorig=%@&imageorig=%@",
