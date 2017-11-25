@@ -21,15 +21,15 @@
 #include "TokenCode.h"
 
 @interface Token : NSObject
-@property (nonatomic,copy) NSString* issuer;
-@property (nonatomic,copy) NSString* label;
+@property (nonatomic,copy) NSString* issuer;  //颁发者
+@property (nonatomic,copy) NSString* label;   //标记者
 @property (nonatomic,strong) NSURL* image;
 @property (nonatomic, readonly) NSString* issuerDefault;
 @property (nonatomic, readonly) NSString* labelDefault;
 @property (nonatomic, readonly) NSURL* imageDefault;
-@property (nonatomic, readonly) NSString* type;
-@property (nonatomic, readonly) NSUInteger digits;
-@property (nonatomic, readonly) NSString* uid;
+@property (nonatomic, readonly) NSString* type;     //令牌类型（时间同步、事件同步、挑战/应答。）
+@property (nonatomic, readonly) NSUInteger digits;  //otp的位数
+@property (nonatomic, readonly) NSString* uid;      //用户id
 @property (nonatomic, readonly) TokenCode* code;
 - (id)initWithURL:(NSURL*)url;
 - (id)initWithURL:(NSURL*)url internal:(BOOL)internal;

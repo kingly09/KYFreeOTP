@@ -11,6 +11,7 @@
 		BC27DFA91FC952E300AF9F30 /* TokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA11FC952E300AF9F30 /* TokenStore.m */; };
 		BC27DFAA1FC952E300AF9F30 /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA21FC952E300AF9F30 /* Token.m */; };
 		BC27DFAB1FC952E300AF9F30 /* TokenCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA31FC952E300AF9F30 /* TokenCode.m */; };
+		BC27DFAE1FC968C300AF9F30 /* KYFreeOTP.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFAD1FC968C300AF9F30 /* KYFreeOTP.m */; };
 		BCCD66431FC8175000261B28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD66421FC8175000261B28 /* AppDelegate.m */; };
 		BCCD66461FC8175000261B28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD66451FC8175000261B28 /* ViewController.m */; };
 		BCCD66491FC8175000261B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCD66471FC8175000261B28 /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 		BC27DFA51FC952E300AF9F30 /* TokenStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenStore.h; sourceTree = "<group>"; };
 		BC27DFA61FC952E300AF9F30 /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
 		BC27DFA71FC952E300AF9F30 /* TokenCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenCode.h; sourceTree = "<group>"; };
+		BC27DFAC1FC968C300AF9F30 /* KYFreeOTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYFreeOTP.h; sourceTree = "<group>"; };
+		BC27DFAD1FC968C300AF9F30 /* KYFreeOTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYFreeOTP.m; sourceTree = "<group>"; };
 		BCCD663E1FC8175000261B28 /* KYFreeOTPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYFreeOTPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCD66411FC8175000261B28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCCD66421FC8175000261B28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,14 +96,16 @@
 		BC27DF9F1FC952E300AF9F30 /* KYFreeOTP */ = {
 			isa = PBXGroup;
 			children = (
-				BC27DFA01FC952E300AF9F30 /* base32.c */,
-				BC27DFA11FC952E300AF9F30 /* TokenStore.m */,
-				BC27DFA21FC952E300AF9F30 /* Token.m */,
-				BC27DFA31FC952E300AF9F30 /* TokenCode.m */,
-				BC27DFA41FC952E300AF9F30 /* base32.h */,
-				BC27DFA51FC952E300AF9F30 /* TokenStore.h */,
 				BC27DFA61FC952E300AF9F30 /* Token.h */,
+				BC27DFA21FC952E300AF9F30 /* Token.m */,
+				BC27DFA51FC952E300AF9F30 /* TokenStore.h */,
+				BC27DFA11FC952E300AF9F30 /* TokenStore.m */,
+				BC27DFA41FC952E300AF9F30 /* base32.h */,
+				BC27DFA01FC952E300AF9F30 /* base32.c */,
 				BC27DFA71FC952E300AF9F30 /* TokenCode.h */,
+				BC27DFA31FC952E300AF9F30 /* TokenCode.m */,
+				BC27DFAC1FC968C300AF9F30 /* KYFreeOTP.h */,
+				BC27DFAD1FC968C300AF9F30 /* KYFreeOTP.m */,
 			);
 			name = KYFreeOTP;
 			path = ../../KYFreeOTP;
@@ -301,6 +306,7 @@
 				BC27DFAB1FC952E300AF9F30 /* TokenCode.m in Sources */,
 				BC27DFA91FC952E300AF9F30 /* TokenStore.m in Sources */,
 				BCCD66431FC8175000261B28 /* AppDelegate.m in Sources */,
+				BC27DFAE1FC968C300AF9F30 /* KYFreeOTP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
