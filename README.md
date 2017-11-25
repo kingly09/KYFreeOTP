@@ -104,6 +104,40 @@ public static String generateOTP(String K,
 
 返回的结果就是看到一个数字的动态密码。
 
+
+### HOTP基本原理
+
+知道了OTP的基本原理，HOTP只是将其中的参数C变成了随机数
+
+公式修改一下
+
+```
+HOTP(K,C) = Truncate(HMAC-SHA-1(K,C))
+```
+
+HOTP： Generates the OTP for the given count
+
+即：C作为一个参数，获取动态密码。
+
+HOTP的python代码片段：
+
+
+```
+lass HOTP(OTP):
+    def at(self, count):
+        """
+        Generates the OTP for the given count
+        @param [Integer] count counter
+        @returns [Integer] OTP
+        """
+        return self.generate_otp(count)
+
+
+```
+
+一般规定HOTP的散列函数使用SHA2，即：基于SHA-256 or SHA-512 [SHA2] 的散列函数做事件同步验证；
+
+
 # 系统
 
 动态口令认证系统由动态口令认证服务器集群、动态口令令牌以及动态口令管理服务站点组成。
