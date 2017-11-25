@@ -273,4 +273,40 @@ IC卡认证、CA认证、指纹认证都需要专用终端认证设备的配合�
 
 该系统相对独立，接口简单，易与现有的电子商务站点认证系统对接，采用专用动态口令认证服务器进行认证，保障现有应用系统的完整性，保护系统资源。
 
+# 使用场景
+
+
+* 服务器登录动态密码验证（如阿里云ECS登录，腾讯机房服务器登录等）；
+* 公司VPN登录双因素验证；
+* 网络接入radius动态密码；
+* 银行转账动态密码；
+* 网银、网络游戏的实体动态口令牌；
+* 等动态密码验证的应用场景。
+
+
+# 参考资料
+
+python的otp实现
+
+https://pypi.python.org/pypi/pyotp
+
+[https://github.com/pyotp/pyotp](https://github.com/pyotp/pyotp)
+
+Google基于TOTP的开源实现 [https://github.com/google/google-authenticator](https://github.com/google/google-authenticator)
+
+RFC6238中TOTP基于java代码的实现[https://github.com/gityf/java_demo/blob/master/demo/src/main/java/org/wyf/otp/TOTP.java](https://github.com/gityf/java_demo/blob/master/demo/src/main/java/org/wyf/otp/TOTP.java)
+
+
+golang的一个otp做的不错的实现[https://github.com/gitchs/gootp](https://github.com/gitchs/gootp)
+
+
+### RFC参考
+
+RFC 4226 One-Time Password and HMAC-based One-Time Password.
+
+RFC 6238 Time-based One-Time Password.
+
+RFC 2104 HMAC Keyed-Hashing for Message Authentication.
+
+
 
