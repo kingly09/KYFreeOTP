@@ -135,8 +135,85 @@ lass HOTP(OTP):
 
 ```
 
-一般规定HOTP的散列函数使用SHA2，即：基于SHA-256 or SHA-512 [SHA2] 的散列函数做事件同步验证；
 
+ 一般规定HOTP的散列函数使用SHA2，即：基于SHA-256 or SHA-512 [SHA2] 的散列函数做事件同步验证；
+
+
+### TOTP基本原理
+
+
+TOTP只是将其中的参数C变成了由时间戳产生的数字。
+
+```
+TOTP(K,C) = HOTP(K,C) = Truncate(HMAC-SHA-1(K,C))
+```
+
+不同点是TOTP中的C是时间戳计算得出。
+
+```
+C = (T - T0) / X;
+```
+
+T 表示当前Unix时间戳
+
+技术分享
+
+T0一般取值为 0.
+
+X 表示时间步数，也就是说多长时间产生一个动态密码，这个时间间隔就是时间步数X，系统默认是30秒；
+
+例如:
+
+T0 = 0;
+
+X = 30;
+
+T = 30 ~ 59, C = 1; 表示30 ~ 59 这30秒内的动态密码一致。
+
+T = 60 ~ 89, C = 2; 表示30 ~ 59 这30秒内的动态密码一致。
+
+不同厂家使用的时间步数不同；
+
+* 阿里巴巴的身份宝使用的时间步数是60秒；
+* 宁盾令牌使用的时间步数是60秒；
+* Google的 身份验证器的时间步数是30秒；
+* 腾讯的Token时间步数是60秒；
+
+TOTP的python代码片段：
+
+```
+class TOTP(OTP):
+    def __init__(self, *args, **kwargs):
+        """
+        @option options [Integer] interval (30) the time interval in seconds
+            for OTP This defaults to 30 which is standard.
+        """
+        self.interval = kwargs.pop(‘interval‘, 30)
+        super(TOTP, self).__init__(*args, **kwargs)
+    def now(self):
+        """
+        Generate the current time OTP
+        @return [Integer] the OTP as an integer
+        """
+        return self.generate_otp(self.timecode(datetime.datetime.now()))
+
+    def timecode(self, for_time):
+        i = time.mktime(for_time.timetuple())
+        return int(i / self.interval)
+```
+
+代码说明
+
+self.interval 是时间步数X
+
+datetime.datetime.now()为当前的Unix时间戳
+
+timecode表示(T - T0) / X，即获取获取动态密码计算的随机数。
+
+ 
+ 
+
+> TOTP 的实现可以使用HMAC-SHA-256或者HMAC-SHA-512散列函数；
 
 # 系统
 
