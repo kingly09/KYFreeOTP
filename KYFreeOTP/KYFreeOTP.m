@@ -60,4 +60,27 @@ NSString *const KYFreeOTPTokenTypeHotp = @"hotp";
     
 }
 
+/**
+ 获得TokenCode
+ */
+-(TokenCode *)getTokenCode {
+    
+    return [self getTokenCodeWith:0];
+}
+/**
+ 获得TokenCode
+ @param index 键值
+ */
+-(TokenCode *)getTokenCodeWith:(NSUInteger)index {
+    
+    TokenStore *tokenStore = [[TokenStore alloc] init];
+    if ([tokenStore count] != 0) {
+        Token* mytoken = [tokenStore get:index];
+        
+        [tokenStore save:mytoken];
+        return  mytoken.code;
+    }
+    return nil;
+}
+
 @end

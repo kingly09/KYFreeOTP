@@ -17,6 +17,7 @@ extern NSString *const KYFreeOTPTokenTypeTotp; //totp算法，时间同步
 extern NSString *const KYFreeOTPTokenTypeHotp; //hotp算法，事件同步
 
 
+
 @interface KYOTPModel : NSObject
 
 @property (nonatomic,copy) NSString* issuer;     //颁发者
@@ -31,6 +32,8 @@ extern NSString *const KYFreeOTPTokenTypeHotp; //hotp算法，事件同步
 
 @end
 
+@class TokenCode;
+@class TokenStore;
 
 @interface KYFreeOTP : NSObject
 
@@ -41,5 +44,14 @@ extern NSString *const KYFreeOTPTokenTypeHotp; //hotp算法，事件同步
  @param OTPModel otp对象
  */
 -(void)addToken:(KYOTPModel *)OTPModel;
+/**
+ 获得TokenCode
+*/
+-(TokenCode *)getTokenCode;
+/**
+ 获得TokenCode
+ @param index 键值
+ */
+-(TokenCode *)getTokenCodeWith:(NSUInteger)index;
 
 @end
