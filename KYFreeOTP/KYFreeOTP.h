@@ -50,8 +50,14 @@ extern NSString *const KYFreeOTPTokenTypeHotp; //hotp算法，事件同步
 -(TokenCode *)getTokenCode;
 /**
  获得TokenCode
- @param index 键值
+ @param index key键值
  */
 -(TokenCode *)getTokenCodeWith:(NSUInteger)index;
+
+/**
+ 删除一个指定位置的Token
+ @param index  key键值
+ */
+- (void)delToken:(NSUInteger)index;
 
 @end

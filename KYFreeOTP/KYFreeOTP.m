@@ -83,4 +83,16 @@ NSString *const KYFreeOTPTokenTypeHotp = @"hotp";
     return nil;
 }
 
+/**
+ 删除一个指定位置的Token
+ @param index  key键值
+ */
+- (void)delToken:(NSUInteger)index {
+    
+    TokenStore *tokenStore = [[TokenStore alloc] init];
+    if ([tokenStore count] > index) {
+        [tokenStore del:index];
+    }
+}
+
 @end
