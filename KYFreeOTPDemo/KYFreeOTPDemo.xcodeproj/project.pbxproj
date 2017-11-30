@@ -16,10 +16,10 @@
 		BCA4A5AC1FCBDDD800537ACB /* KYFreeOTPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA4A5AB1FCBDDD800537ACB /* KYFreeOTPTests.m */; };
 		BCA4A5B11FCBDDD800537ACB /* KYFreeOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4A59C1FCBDDD800537ACB /* KYFreeOTP.framework */; };
 		BCA4A5B21FCBDDD800537ACB /* KYFreeOTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4A59C1FCBDDD800537ACB /* KYFreeOTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BCA4A5BA1FCBDE1700537ACB /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA61FC952E300AF9F30 /* Token.h */; };
-		BCA4A5BC1FCBDE1700537ACB /* TokenStore.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA51FC952E300AF9F30 /* TokenStore.h */; };
+		BCA4A5BA1FCBDE1700537ACB /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA61FC952E300AF9F30 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA4A5BC1FCBDE1700537ACB /* TokenStore.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA51FC952E300AF9F30 /* TokenStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCA4A5BE1FCBDE1700537ACB /* base32.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA41FC952E300AF9F30 /* base32.h */; };
-		BCA4A5C01FCBDE1700537ACB /* TokenCode.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA71FC952E300AF9F30 /* TokenCode.h */; };
+		BCA4A5C01FCBDE1700537ACB /* TokenCode.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA71FC952E300AF9F30 /* TokenCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCA4A5C21FCBDE1700537ACB /* KYFreeOTP.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFAC1FC968C300AF9F30 /* KYFreeOTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCA4A5C41FCBDE5200537ACB /* KYFreeOTP.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFAD1FC968C300AF9F30 /* KYFreeOTP.m */; };
 		BCA4A5C51FCBDE5800537ACB /* TokenCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA31FC952E300AF9F30 /* TokenCode.m */; };
