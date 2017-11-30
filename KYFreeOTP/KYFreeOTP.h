@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Token.h"
 
 extern NSString *const KYFreeOTPSHA1Algorithm;
 extern NSString *const KYFreeOTPSHA256Algorithm;
@@ -40,13 +41,13 @@ extern NSString *const KYFreeOTPTokenTypeHotp; //hotp算法，事件同步
 
 /**
  添加addToken
-
+ 
  @param OTPModel otp对象
  */
 -(void)addToken:(KYOTPModel *)OTPModel;
 /**
  获得TokenCode
-*/
+ */
 -(TokenCode *)getTokenCode;
 /**
  获得TokenCode
@@ -61,3 +62,4 @@ extern NSString *const KYFreeOTPTokenTypeHotp; //hotp算法，事件同步
 - (void)delToken:(NSUInteger)index;
 
 @end
+
