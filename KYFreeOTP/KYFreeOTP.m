@@ -50,7 +50,7 @@ NSString *const KYFreeOTPTokenTypeHotp = @"hotp";
     urlc.host = [OTPModel.tokenType isEqualToString:KYFreeOTPTokenTypeTotp] ? KYFreeOTPTokenTypeTotp : KYFreeOTPTokenTypeHotp;
     urlc.path = [NSString stringWithFormat:@"/%@:%@", OTPModel.issuer, OTPModel.uid];
     urlc.query = [NSString stringWithFormat:@"algorithm=%s&digits=%lu&secret=%@&%s=%lu",
-                  algo, (long)OTPModel.digits, OTPModel.secret,
+                  algo, OTPModel.digits, OTPModel.secret,
                   [OTPModel.tokenType isEqualToString:KYFreeOTPTokenTypeTotp]?"period" : "counter",OTPModel.interval];
 
     // Make token

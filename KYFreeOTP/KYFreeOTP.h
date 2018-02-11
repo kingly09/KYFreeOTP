@@ -28,8 +28,8 @@ extern NSString *const KYFreeOTPTokenTypeHotp; //hotp算法，事件同步
 @property (nonatomic,copy) NSString* algorithm;  //加密方式
 @property (nonatomic,copy) NSString* tokenType;  //算法方式
 
-@property (nonatomic, assign) NSInteger digits;  //otp的位数
-@property (nonatomic, assign) NSInteger interval; //时间间隔（秒）
+@property (nonatomic, assign) long digits;  //otp的位数
+@property (nonatomic, assign) long interval; //时间间隔（秒）
 
 @end
 
