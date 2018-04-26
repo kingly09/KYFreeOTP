@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		097F8820A6EDFEC0C5D35D34 /* Pods_KYFreeOTP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYFreeOTP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F91BEE39E1F6E30F88FA2A6 /* Pods-KYFreeOTP_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYFreeOTP_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYFreeOTP_Example/Pods-KYFreeOTP_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3AA35298B2DF15BBBBF09BB4 /* KYFreeOTP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KYFreeOTP.podspec; path = ../KYFreeOTP.podspec; sourceTree = "<group>"; };
+		3AA35298B2DF15BBBBF09BB4 /* KYFreeOTP.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KYFreeOTP.podspec; path = ../KYFreeOTP.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3B73D1C5B3A4C8AE2FFA840B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KYFreeOTP_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYFreeOTP_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };

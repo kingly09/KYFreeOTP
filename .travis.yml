@@ -1,5 +1,5 @@
 language: objective-c
-xcode_project: KYFreeOTPDemo/KYFreeOTPDemo.xcodeproj
-xcode_schemes: KYFreeOTPDemo
+xcode_project: Example/KYFreeOTPDemo.xcodeproj
+xcode_schemes: Example
 
 
