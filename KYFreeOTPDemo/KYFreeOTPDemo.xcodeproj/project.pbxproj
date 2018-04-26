@@ -12,7 +12,20 @@
 		BC27DFAA1FC952E300AF9F30 /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA21FC952E300AF9F30 /* Token.m */; };
 		BC27DFAB1FC952E300AF9F30 /* TokenCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA31FC952E300AF9F30 /* TokenCode.m */; };
 		BC27DFAE1FC968C300AF9F30 /* KYFreeOTP.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFAD1FC968C300AF9F30 /* KYFreeOTP.m */; };
+		BCA4A5A51FCBDDD800537ACB /* KYFreeOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4A59C1FCBDDD800537ACB /* KYFreeOTP.framework */; };
 		BCA4A5AC1FCBDDD800537ACB /* KYFreeOTPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA4A5AB1FCBDDD800537ACB /* KYFreeOTPTests.m */; };
+		BCA4A5B11FCBDDD800537ACB /* KYFreeOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4A59C1FCBDDD800537ACB /* KYFreeOTP.framework */; };
+		BCA4A5B21FCBDDD800537ACB /* KYFreeOTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCA4A59C1FCBDDD800537ACB /* KYFreeOTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCA4A5BA1FCBDE1700537ACB /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA61FC952E300AF9F30 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA4A5BC1FCBDE1700537ACB /* TokenStore.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA51FC952E300AF9F30 /* TokenStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA4A5BE1FCBDE1700537ACB /* base32.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA41FC952E300AF9F30 /* base32.h */; };
+		BCA4A5C01FCBDE1700537ACB /* TokenCode.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFA71FC952E300AF9F30 /* TokenCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA4A5C21FCBDE1700537ACB /* KYFreeOTP.h in Headers */ = {isa = PBXBuildFile; fileRef = BC27DFAC1FC968C300AF9F30 /* KYFreeOTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA4A5C41FCBDE5200537ACB /* KYFreeOTP.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFAD1FC968C300AF9F30 /* KYFreeOTP.m */; };
+		BCA4A5C51FCBDE5800537ACB /* TokenCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA31FC952E300AF9F30 /* TokenCode.m */; };
+		BCA4A5C61FCBDE5E00537ACB /* base32.c in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA01FC952E300AF9F30 /* base32.c */; };
+		BCA4A5C71FCBDE6400537ACB /* TokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA11FC952E300AF9F30 /* TokenStore.m */; };
+		BCA4A5C81FCBDE6900537ACB /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = BC27DFA21FC952E300AF9F30 /* Token.m */; };
 		BCCD66431FC8175000261B28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD66421FC8175000261B28 /* AppDelegate.m */; };
 		BCCD66461FC8175000261B28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCD66451FC8175000261B28 /* ViewController.m */; };
 		BCCD66491FC8175000261B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCD66471FC8175000261B28 /* Main.storyboard */; };
@@ -24,12 +37,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BCA4A5A61FCBDDD800537ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCCD66361FC8175000261B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA4A59B1FCBDDD800537ACB;
+			remoteInfo = KYFreeOTP;
+		};
 		BCA4A5A81FCBDDD800537ACB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BCCD66361FC8175000261B28 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BCCD663D1FC8175000261B28;
 			remoteInfo = KYFreeOTPDemo;
+		};
+		BCA4A5AF1FCBDDD800537ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCCD66361FC8175000261B28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA4A59B1FCBDDD800537ACB;
+			remoteInfo = KYFreeOTP;
 		};
 		BCCD66571FC8175000261B28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -54,6 +81,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BCA4A5B21FCBDDD800537ACB /* KYFreeOTP.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +99,8 @@
 		BC27DFA71FC952E300AF9F30 /* TokenCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenCode.h; sourceTree = "<group>"; };
 		BC27DFAC1FC968C300AF9F30 /* KYFreeOTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYFreeOTP.h; sourceTree = "<group>"; };
 		BC27DFAD1FC968C300AF9F30 /* KYFreeOTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYFreeOTP.m; sourceTree = "<group>"; };
+		BCA4A59C1FCBDDD800537ACB /* KYFreeOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYFreeOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA4A59F1FCBDDD800537ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA4A5A41FCBDDD800537ACB /* KYFreeOTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYFreeOTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA4A5AB1FCBDDD800537ACB /* KYFreeOTPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYFreeOTPTests.m; sourceTree = "<group>"; };
 		BCA4A5AD1FCBDDD800537ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,10 +123,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BCA4A5981FCBDDD800537ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCA4A5A11FCBDDD800537ACB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4A5A51FCBDDD800537ACB /* KYFreeOTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA4A5B11FCBDDD800537ACB /* KYFreeOTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +181,14 @@
 			path = ../../KYFreeOTP;
 			sourceTree = "<group>";
 		};
+		BCA4A59D1FCBDDD800537ACB /* KYFreeOTP */ = {
+			isa = PBXGroup;
+			children = (
+				BCA4A59F1FCBDDD800537ACB /* Info.plist */,
+			);
+			path = KYFreeOTP;
+			sourceTree = "<group>";
+		};
 		BCA4A5AA1FCBDDD800537ACB /* KYFreeOTPTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +204,7 @@
 				BCCD66401FC8175000261B28 /* KYFreeOTPDemo */,
 				BCCD66591FC8175000261B28 /* KYFreeOTPDemoTests */,
 				BCCD66641FC8175000261B28 /* KYFreeOTPDemoUITests */,
+				BCA4A59D1FCBDDD800537ACB /* KYFreeOTP */,
 				BCA4A5AA1FCBDDD800537ACB /* KYFreeOTPTests */,
 				BCCD663F1FC8175000261B28 /* Products */,
 			);
@@ -168,6 +216,7 @@
 				BCCD663E1FC8175000261B28 /* KYFreeOTPDemo.app */,
 				BCCD66561FC8175000261B28 /* KYFreeOTPDemoTests.xctest */,
 				BCCD66611FC8175000261B28 /* KYFreeOTPDemoUITests.xctest */,
+				BCA4A59C1FCBDDD800537ACB /* KYFreeOTP.framework */,
 				BCA4A5A41FCBDDD800537ACB /* KYFreeOTPTests.xctest */,
 			);
 			name = Products;
@@ -210,7 +259,40 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BCA4A5991FCBDDD800537ACB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA4A5C21FCBDE1700537ACB /* KYFreeOTP.h in Headers */,
+				BCA4A5BA1FCBDE1700537ACB /* Token.h in Headers */,
+				BCA4A5BC1FCBDE1700537ACB /* TokenStore.h in Headers */,
+				BCA4A5C01FCBDE1700537ACB /* TokenCode.h in Headers */,
+				BCA4A5BE1FCBDE1700537ACB /* base32.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		BCA4A59B1FCBDDD800537ACB /* KYFreeOTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA4A5B71FCBDDD800537ACB /* Build configuration list for PBXNativeTarget "KYFreeOTP" */;
+			buildPhases = (
+				BCA4A5971FCBDDD800537ACB /* Sources */,
+				BCA4A5981FCBDDD800537ACB /* Frameworks */,
+				BCA4A5991FCBDDD800537ACB /* Headers */,
+				BCA4A59A1FCBDDD800537ACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYFreeOTP;
+			productName = KYFreeOTP;
+			productReference = BCA4A59C1FCBDDD800537ACB /* KYFreeOTP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		BCA4A5A31FCBDDD800537ACB /* KYFreeOTPTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCA4A5B91FCBDDD800537ACB /* Build configuration list for PBXNativeTarget "KYFreeOTPTests" */;
@@ -222,6 +304,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BCA4A5A71FCBDDD800537ACB /* PBXTargetDependency */,
 				BCA4A5A91FCBDDD800537ACB /* PBXTargetDependency */,
 			);
 			name = KYFreeOTPTests;
@@ -241,6 +324,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BCA4A5B01FCBDDD800537ACB /* PBXTargetDependency */,
 			);
 			name = KYFreeOTPDemo;
 			productName = KYFreeOTPDemo;
@@ -292,6 +376,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = kingly;
 				TargetAttributes = {
+					BCA4A59B1FCBDDD800537ACB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					BCA4A5A31FCBDDD800537ACB = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -329,12 +417,20 @@
 				BCCD663D1FC8175000261B28 /* KYFreeOTPDemo */,
 				BCCD66551FC8175000261B28 /* KYFreeOTPDemoTests */,
 				BCCD66601FC8175000261B28 /* KYFreeOTPDemoUITests */,
+				BCA4A59B1FCBDDD800537ACB /* KYFreeOTP */,
 				BCA4A5A31FCBDDD800537ACB /* KYFreeOTPTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BCA4A59A1FCBDDD800537ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCA4A5A21FCBDDD800537ACB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +465,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BCA4A5971FCBDDD800537ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA4A5C81FCBDE6900537ACB /* Token.m in Sources */,
+				BCA4A5C71FCBDE6400537ACB /* TokenStore.m in Sources */,
+				BCA4A5C61FCBDE5E00537ACB /* base32.c in Sources */,
+				BCA4A5C51FCBDE5800537ACB /* TokenCode.m in Sources */,
+				BCA4A5C41FCBDE5200537ACB /* KYFreeOTP.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCA4A5A01FCBDDD800537ACB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,10 +519,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BCA4A5A71FCBDDD800537ACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA4A59B1FCBDDD800537ACB /* KYFreeOTP */;
+			targetProxy = BCA4A5A61FCBDDD800537ACB /* PBXContainerItemProxy */;
+		};
 		BCA4A5A91FCBDDD800537ACB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BCCD663D1FC8175000261B28 /* KYFreeOTPDemo */;
 			targetProxy = BCA4A5A81FCBDDD800537ACB /* PBXContainerItemProxy */;
+		};
+		BCA4A5B01FCBDDD800537ACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA4A59B1FCBDDD800537ACB /* KYFreeOTP */;
+			targetProxy = BCA4A5AF1FCBDDD800537ACB /* PBXContainerItemProxy */;
 		};
 		BCCD66581FC8175000261B28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -448,6 +566,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BCA4A5B31FCBDDD800537ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KYFreeOTP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTP;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCA4A5B41FCBDDD800537ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KYFreeOTP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTP;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BCA4A5B51FCBDDD800537ACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -669,6 +833,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BCA4A5B71FCBDDD800537ACB /* Build configuration list for PBXNativeTarget "KYFreeOTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA4A5B31FCBDDD800537ACB /* Debug */,
+				BCA4A5B41FCBDDD800537ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BCA4A5B91FCBDDD800537ACB /* Build configuration list for PBXNativeTarget "KYFreeOTPTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
