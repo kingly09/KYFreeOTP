@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
   s.name         = "KYFreeOTP"
-  s.version      = "0.0.9"
+  s.version      = "0.1.0"
   s.summary      = "KYFreeOTP 是一个免费的otp算法生成类库."
   
   s.homepage     = "https://github.com/kingly09/KYFreeOTP"
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://github.com/kingly09"
   s.source_files = 'KYFreeOTP/Classes/**/*'
   s.module_map = 'KYFreeOTP/Modules/module.modulemap'
-  s.public_header_files = 'KYFreeOTP/Headers/Public/**/*.h'
+  s.public_header_files = 'KYFreeOTP/Classes/Public/*.{h}'
   s.requires_arc = true
   
   
