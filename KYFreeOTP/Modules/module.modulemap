@@ -1,0 +1,8 @@
+framework module KYFreeOTP {
+  umbrella header "KYFreeOTP.h"
+  header "base32.h"
+  header "TokenStore.h"
+
+  export *
+  module * { export * }
+}
