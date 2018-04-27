@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
   s.name         = "KYFreeOTP"
-  s.version      = "0.1.1"
+  s.version      = "0.1.3"
   s.summary      = "KYFreeOTP 是一个免费的otp算法生成类库."
   
   s.homepage     = "https://github.com/kingly09/KYFreeOTP"

@@ -24,6 +24,18 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9E230C2068E7CA28E1AFE866 /* Pods_KYFreeOTP_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097F8820A6EDFEC0C5D35D34 /* Pods_KYFreeOTP_Tests.framework */; };
+		BCC356D32092B91400BB9F4B /* KYFreeOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC356CC2092B91300BB9F4B /* KYFreeOTP.framework */; };
+		BCC356D42092B91400BB9F4B /* KYFreeOTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCC356CC2092B91300BB9F4B /* KYFreeOTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCC356E32092BA4B00BB9F4B /* base32.c in Sources */ = {isa = PBXBuildFile; fileRef = BCC356D92092BA4B00BB9F4B /* base32.c */; };
+		BCC356E42092BA4B00BB9F4B /* KYFreeOTP.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC356DA2092BA4B00BB9F4B /* KYFreeOTP.m */; };
+		BCC356E52092BA4B00BB9F4B /* base32.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC356DB2092BA4B00BB9F4B /* base32.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCC356E62092BA4B00BB9F4B /* TokenCode.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC356DC2092BA4B00BB9F4B /* TokenCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCC356E72092BA4B00BB9F4B /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC356DD2092BA4B00BB9F4B /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCC356E82092BA4B00BB9F4B /* TokenCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC356DE2092BA4B00BB9F4B /* TokenCode.m */; };
+		BCC356E92092BA4B00BB9F4B /* TokenStore.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC356DF2092BA4B00BB9F4B /* TokenStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCC356EA2092BA4B00BB9F4B /* TokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC356E02092BA4B00BB9F4B /* TokenStore.m */; };
+		BCC356EB2092BA4B00BB9F4B /* KYFreeOTP.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC356E12092BA4B00BB9F4B /* KYFreeOTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCC356EC2092BA4B00BB9F4B /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC356E22092BA4B00BB9F4B /* Token.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +46,28 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = KYFreeOTP;
 		};
+		BCC356D12092B91400BB9F4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC356CB2092B91300BB9F4B;
+			remoteInfo = KYFreeOTP;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCC356D82092B91400BB9F4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BCC356D42092B91400BB9F4B /* KYFreeOTP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		097F8820A6EDFEC0C5D35D34 /* Pods_KYFreeOTP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYFreeOTP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +98,18 @@
 		730C924452D418287743A20A /* Pods-KYFreeOTP_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYFreeOTP_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KYFreeOTP_Example/Pods-KYFreeOTP_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADA0B324E91BBE3771EF412F /* Pods_KYFreeOTP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KYFreeOTP_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC356CC2092B91300BB9F4B /* KYFreeOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYFreeOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC356CF2092B91400BB9F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC356D92092BA4B00BB9F4B /* base32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base32.c; path = ../../KYFreeOTP/Classes/base32.c; sourceTree = "<group>"; };
+		BCC356DA2092BA4B00BB9F4B /* KYFreeOTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KYFreeOTP.m; path = ../../KYFreeOTP/Classes/KYFreeOTP.m; sourceTree = "<group>"; };
+		BCC356DB2092BA4B00BB9F4B /* base32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base32.h; path = ../../KYFreeOTP/Classes/base32.h; sourceTree = "<group>"; };
+		BCC356DC2092BA4B00BB9F4B /* TokenCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TokenCode.h; path = ../../KYFreeOTP/Classes/TokenCode.h; sourceTree = "<group>"; };
+		BCC356DD2092BA4B00BB9F4B /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Token.h; path = ../../KYFreeOTP/Classes/Token.h; sourceTree = "<group>"; };
+		BCC356DE2092BA4B00BB9F4B /* TokenCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TokenCode.m; path = ../../KYFreeOTP/Classes/TokenCode.m; sourceTree = "<group>"; };
+		BCC356DF2092BA4B00BB9F4B /* TokenStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TokenStore.h; path = ../../KYFreeOTP/Classes/TokenStore.h; sourceTree = "<group>"; };
+		BCC356E02092BA4B00BB9F4B /* TokenStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TokenStore.m; path = ../../KYFreeOTP/Classes/TokenStore.m; sourceTree = "<group>"; };
+		BCC356E12092BA4B00BB9F4B /* KYFreeOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYFreeOTP.h; path = ../../KYFreeOTP/Classes/KYFreeOTP.h; sourceTree = "<group>"; };
+		BCC356E22092BA4B00BB9F4B /* Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Token.m; path = ../../KYFreeOTP/Classes/Token.m; sourceTree = "<group>"; };
 		CB11D020C28EC16DE71AAF67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E12CA8A001423B6F657832A7 /* Pods-KYFreeOTP_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYFreeOTP_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KYFreeOTP_Tests/Pods-KYFreeOTP_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC356D32092B91400BB9F4B /* KYFreeOTP.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -92,6 +138,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCC356C82092B91300BB9F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,6 +154,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for KYFreeOTP */,
 				6003F5B5195388D20070C39A /* Tests */,
+				BCC356CD2092B91400BB9F4B /* KYFreeOTP */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				C8009A8D1DCCC2A4A9578BED /* Pods */,
@@ -112,6 +166,7 @@
 			children = (
 				6003F58A195388D20070C39A /* KYFreeOTP_Example.app */,
 				6003F5AE195388D20070C39A /* KYFreeOTP_Tests.xctest */,
+				BCC356CC2092B91300BB9F4B /* KYFreeOTP.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +240,24 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		BCC356CD2092B91400BB9F4B /* KYFreeOTP */ = {
+			isa = PBXGroup;
+			children = (
+				BCC356D92092BA4B00BB9F4B /* base32.c */,
+				BCC356DB2092BA4B00BB9F4B /* base32.h */,
+				BCC356E12092BA4B00BB9F4B /* KYFreeOTP.h */,
+				BCC356DA2092BA4B00BB9F4B /* KYFreeOTP.m */,
+				BCC356DD2092BA4B00BB9F4B /* Token.h */,
+				BCC356E22092BA4B00BB9F4B /* Token.m */,
+				BCC356DC2092BA4B00BB9F4B /* TokenCode.h */,
+				BCC356DE2092BA4B00BB9F4B /* TokenCode.m */,
+				BCC356DF2092BA4B00BB9F4B /* TokenStore.h */,
+				BCC356E02092BA4B00BB9F4B /* TokenStore.m */,
+				BCC356CF2092B91400BB9F4B /* Info.plist */,
+			);
+			path = KYFreeOTP;
+			sourceTree = "<group>";
+		};
 		C8009A8D1DCCC2A4A9578BED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +271,21 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BCC356C92092B91300BB9F4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC356EB2092BA4B00BB9F4B /* KYFreeOTP.h in Headers */,
+				BCC356E92092BA4B00BB9F4B /* TokenStore.h in Headers */,
+				BCC356E72092BA4B00BB9F4B /* Token.h in Headers */,
+				BCC356E52092BA4B00BB9F4B /* base32.h in Headers */,
+				BCC356E62092BA4B00BB9F4B /* TokenCode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		6003F589195388D20070C39A /* KYFreeOTP_Example */ = {
 			isa = PBXNativeTarget;
@@ -208,10 +296,12 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				91823A3B429EFEC0B5FF2D1A /* [CP] Embed Pods Frameworks */,
+				BCC356D82092B91400BB9F4B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCC356D22092B91400BB9F4B /* PBXTargetDependency */,
 			);
 			name = KYFreeOTP_Example;
 			productName = KYFreeOTP;
@@ -238,6 +328,24 @@
 			productReference = 6003F5AE195388D20070C39A /* KYFreeOTP_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BCC356CB2092B91300BB9F4B /* KYFreeOTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC356D72092B91400BB9F4B /* Build configuration list for PBXNativeTarget "KYFreeOTP" */;
+			buildPhases = (
+				BCC356C72092B91300BB9F4B /* Sources */,
+				BCC356C82092B91300BB9F4B /* Frameworks */,
+				BCC356C92092B91300BB9F4B /* Headers */,
+				BCC356CA2092B91300BB9F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYFreeOTP;
+			productName = KYFreeOTP;
+			productReference = BCC356CC2092B91300BB9F4B /* KYFreeOTP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,6 +362,11 @@
 					6003F5AD195388D20070C39A = {
 						DevelopmentTeam = KE5MJRYE2S;
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					BCC356CB2092B91300BB9F4B = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = KE5MJRYE2S;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -272,6 +385,7 @@
 			targets = (
 				6003F589195388D20070C39A /* KYFreeOTP_Example */,
 				6003F5AD195388D20070C39A /* KYFreeOTP_Tests */,
+				BCC356CB2092B91300BB9F4B /* KYFreeOTP */,
 			);
 		};
 /* End PBXProject section */
@@ -293,6 +407,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC356CA2092B91300BB9F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +515,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCC356C72092B91300BB9F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC356E82092BA4B00BB9F4B /* TokenCode.m in Sources */,
+				BCC356EC2092BA4B00BB9F4B /* Token.m in Sources */,
+				BCC356EA2092BA4B00BB9F4B /* TokenStore.m in Sources */,
+				BCC356E32092BA4B00BB9F4B /* base32.c in Sources */,
+				BCC356E42092BA4B00BB9F4B /* KYFreeOTP.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -401,6 +534,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* KYFreeOTP_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		BCC356D22092B91400BB9F4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC356CB2092B91300BB9F4B /* KYFreeOTP */;
+			targetProxy = BCC356D12092B91400BB9F4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -510,11 +648,13 @@
 			baseConfigurationReference = 730C924452D418287743A20A /* Pods-KYFreeOTP_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = KE5MJRYE2S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KYFreeOTP/KYFreeOTP-Prefix.pch";
 				INFOPLIST_FILE = "KYFreeOTP/KYFreeOTP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,11 +667,13 @@
 			baseConfigurationReference = 0F91BEE39E1F6E30F88FA2A6 /* Pods-KYFreeOTP_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = KE5MJRYE2S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KYFreeOTP/KYFreeOTP-Prefix.pch";
 				INFOPLIST_FILE = "KYFreeOTP/KYFreeOTP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -585,6 +727,99 @@
 			};
 			name = Release;
 		};
+		BCC356D52092B91400BB9F4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = KYFreeOTP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTP;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCC356D62092B91400BB9F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = KYFreeOTP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYFreeOTP;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,6 +846,15 @@
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,
 				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC356D72092B91400BB9F4B /* Build configuration list for PBXNativeTarget "KYFreeOTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC356D52092B91400BB9F4B /* Debug */,
+				BCC356D62092B91400BB9F4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
