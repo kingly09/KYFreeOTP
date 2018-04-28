@@ -7,7 +7,6 @@
 #
 
 Pod::Spec.new do |s|
-  
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  These will help people to find your library, and whilst it
@@ -28,6 +27,6 @@ Pod::Spec.new do |s|
   s.module_map = 'KYFreeOTP/Modules/module.modulemap'
  
   s.requires_arc = true
-  
-  
+
+
 end
