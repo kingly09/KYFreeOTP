@@ -7,14 +7,14 @@
 //
 
 #import "KYViewController.h"
-#import <KYFreeOTP/KYFreeOTP.h>
+#import "KYFreeOTP.h"
 
 #define  OTPKEY @"SK6VEUXUMPG3YNXL"
 
 @interface KYViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *optLabel;
 @property (nonatomic,strong) NSTimer *dynamictimer; //定时器
-@property (nonatomic,strong)   TokenCode *tokenCode; //otp密码
+@property (nonatomic,strong)  TokenCode *tokenCode; //otp密码
 
 @end
 
@@ -59,7 +59,7 @@
   
   //定时器
   [self invalidateDynamictimer];
-  _dynamictimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(setupDynamictimer) userInfo:nil repeats:YES];
+  _dynamictimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(setupDynamictimer) userInfo:nil repeats:YES];
   [_dynamictimer fire];
   [[NSRunLoop mainRunLoop] addTimer:_dynamictimer forMode:NSDefaultRunLoopMode];
   
@@ -71,14 +71,21 @@
   NSUInteger period = _tokenCode.period;
   NSUInteger countDown = period - (1.0f - _tokenCode.currentProgress) * period;
   
+  KYFreeOTP *freeOTP = [[KYFreeOTP alloc] init];
+  TokenCode *toenCode = [freeOTP getTokenCode];
+  
+  NSUInteger csountDown = toenCode.period - (1.0f - toenCode.currentProgress) * toenCode.period;
+  
+  NSLog(@"ss:%0.0f",(toenCode.currentProgress * 30) * 1000);
+  
   //当跑完一次的时候再拿一次
-  if (countDown == 0) {
-    KYFreeOTP *freeOTP = [[KYFreeOTP alloc] init];
-    _tokenCode = [freeOTP getTokenCode];
-  }
+ // if (countDown == 0) {
+//    KYFreeOTP *freeOTP = [[KYFreeOTP alloc] init];
+//    _tokenCode = [freeOTP getTokenCode];
+ // }
   
   //赋值6个蓝色框框
-  [self showNumOnSixLabWithStr:_tokenCode.currentCode];
+  [self showNumOnSixLabWithStr:toenCode.currentCode];
   
   
 }

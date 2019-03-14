@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'KYFreeOTP_Example' do
   
-  pod 'KYFreeOTP', :path => '../'
+  #pod 'KYFreeOTP', :path => '../'
 
   target 'KYFreeOTP_Tests' do
     inherit! :search_paths
